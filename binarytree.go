@@ -3,11 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	newnode := &node{value: 1}
+	newnode1 := &node{value: 1}
+	newnode2 := &node{value: 10}
+	newnode3 := &node{value: 20}
 
 	var bt BinaryTree
-	bt.insert(newnode)
-	fmt.Printf("resp %d", bt.root.value)
+	bt.insert(newnode1)
+	bt.insert(newnode2)
+	bt.insert(newnode3)
 }
 
 type node struct {
