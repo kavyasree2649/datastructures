@@ -4,7 +4,6 @@ import (
 	"fmt"
 )
 
-var calculations int
 var cacheMap = make(map[int]int)
 
 func main() {
@@ -13,7 +12,6 @@ func main() {
 }
 
 func fibanocii(n int) int {
-	calculations++
 	if _, ok := cacheMap[n]; ok {
 		return cacheMap[n]
 	} else if n < 2 {
